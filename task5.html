@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5 - JS Events</title>
+    <link rel="stylesheet" href="task5.css">
+</head>
+<body>
+
+    <div class="form-card">
+        <h2>Interactive Form & Events</h2>
+
+        <form id="user-form">
+            <div class="field">
+                <label>Name (input event):</label>
+                <input type="text" id="username" placeholder="Type name here...">
+                <p id="live-preview">Preview: </p>
+            </div>
+
+            <div class="field">
+                <label>Role (change event):</label>
+                <select id="role-select">
+                    <option value="">Select Role</option>
+                    <option value="Frontend Developer">Frontend Developer</option>
+                    <option value="UI/UX Designer">UI/UX Designer</option>
+                    <option value="Backend Developer">Backend Developer</option>
+                </select>
+                <p id="role-msg"></p>
+            </div>
+
+            <button type="submit" id="submit-btn">Submit Form</button>
+        </form>
+
+        <div id="status-box">Hover or click this box</div>
+    </div>
+
+    <script src="task5.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record Manager</title>
+    <link rel="stylesheet" href="task6.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <h1>Student Record Manager</h1>
+            <p>Task 6 - Mini JS Application</p>
+        </header>
+
+        <section class="form-section">
+            <form id="student-form">
+                <input type="text" id="s-name" placeholder="Student Name" required>
+                <input type="text" id="s-course" placeholder="Course (e.g. BCA)" required>
+                <input type="number" id="s-marks" placeholder="Marks (0-100)" required min="0" max="100">
+                <button type="submit" id="add-btn">Add Student</button>
+            </form>
+        </section>
+
+        <section class="list-section">
+            <h2>Records List</h2>
+            <table id="student-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Marks</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Dynamic Rows will appear here -->
+                </tbody>
+            </table>
+            <p id="empty-msg">No student records found.</p>
+        </section>
+    </div>
+
+    <script src="task6.js"></script>
+</body>
+</html>
